@@ -46,15 +46,17 @@ h1 {
 
 /* Image Container */
 .image-container {
-  margin: 0.625rem 25%;
-  display: flex;
-  flex-wrap: wrap;
+  /* margin: 0.625rem 25%; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 1.5rem;
+  margin: 90px 25px;
 }
 
 .image-container img {
   width: 100%;
   margin-top: 0.5rem;
-  border-radius: 1.5rem;
+  border-radius: 5px;
 }
 
 /* Media Query: Smartphone */
